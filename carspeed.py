@@ -224,8 +224,8 @@ adjusted_min_area = MIN_AREA
 camera = PiCamera()
 camera.resolution = RESOLUTION
 camera.framerate = FPS
-camera.vflip = False
-camera.hflip = False
+camera.vflip = True
+camera.hflip = True
 
 rawCapture = PiRGBArray(camera, size=camera.resolution)
 # allow the camera to warm up
