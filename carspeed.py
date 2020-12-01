@@ -117,9 +117,9 @@ def store_traffic_data():
     
     
 # define some constants
-L2R_DISTANCE = 47  #<---- enter your distance-to-road value for cars going left to right here
-R2L_DISTANCE = 37  #<---- enter your distance-to-road value for cars going left to right here
-MIN_SPEED_IMAGE = 50  #<---- enter the minimum speed for saving images
+L2R_DISTANCE = 50.68  #<---- enter your distance-to-road value for cars going left to right here
+R2L_DISTANCE = 39.86  #<---- enter your distance-to-road value for cars going left to right here
+MIN_SPEED_IMAGE = 35  #<---- enter the minimum speed for saving images
 SAVE_CSV = True  #<---- record the results in .csv format in carspeed_(date).csv
 MIN_SPEED_SAVE = 10  #<---- enter the minimum speed for publishing to MQTT broker and saving to CSV
 MAX_SPEED_SAVE = 80  #<---- enter the maximum speed for publishing to MQTT broker and saving to CSV
