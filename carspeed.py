@@ -236,10 +236,10 @@ cv2.namedWindow("Speed Camera")
 cv2.moveWindow("Speed Camera", 10, 40)
  
 #Create MQTT client and connect
-client = mqtt.Client('traffic_cam')
-client.username_pw_set('xxxxxx', password='xxxxxxxxxxxxx')
-client.connect(broker_address)
-client.loop_start()
+#client = mqtt.Client('traffic_cam')
+#client.username_pw_set('xxxxxx', password='xxxxxxxxxxxxx')
+#client.connect(broker_address)
+#client.loop_start()
 
 if SAVE_CSV:
     csvfileout = "carspeed_{}.csv".format(datetime.datetime.now().strftime("%Y%m%d_%H%M"))
