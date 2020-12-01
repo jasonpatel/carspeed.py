@@ -7,7 +7,7 @@ import time
 import math
 import datetime
 import cv2
-#import paho.mqtt.client as mqtt
+#import paho.client as mqtt
 import numpy as np
 import argparse
 
@@ -113,7 +113,7 @@ def store_traffic_data():
         ',"field3":' + ("%d" % counter) +\
         ',"field4":' + ("%.0f" % sd) +\
         '}'
-    client.publish('traffic', jsonstring)  #Publish MQTT data
+#    client.publish('traffic', jsonstring)  #Publish MQTT data
     
     
 # define some constants
